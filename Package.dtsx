@@ -11,8 +11,8 @@
   DTS:LocaleID="3082"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="30"
-  DTS:VersionGUID="{5A53CD5F-DDB9-4903-BBE2-1638A0C47CD5}">
+  DTS:VersionBuild="33"
+  DTS:VersionGUID="{A67C824E-4630-4CC3-A44C-C8819DD04506}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -197,39 +197,39 @@
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x007C_"
+              DTS:ColumnDelimiter="_x002C_"
               DTS:MaximumWidth="7"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="COD_ENTITY_GEOGRAPHIC"
-              DTS:DTSID="{E7570449-6A3C-4309-B0A9-85B0602C7E52}"
+              DTS:DTSID="{FDCA8D3B-E33E-47DA-A57B-3C17E17455E5}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x007C_"
+              DTS:ColumnDelimiter="_x002C_"
               DTS:MaximumWidth="2"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ENTITY_TYPE"
-              DTS:DTSID="{7008D51B-768A-46B5-BB10-5A1B6C66C9EF}"
+              DTS:DTSID="{87E4921A-6E25-47D4-905B-9AD24797A868}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x007C_"
+              DTS:ColumnDelimiter="_x002C_"
               DTS:MaximumWidth="50"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ENTITY_NAME"
-              DTS:DTSID="{5440C8AA-805E-4EF0-87E8-E318CC6892F0}"
+              DTS:DTSID="{4E9E0680-CAEC-46BF-8DE2-D27F8D0D3B3D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x007C_"
+              DTS:ColumnDelimiter="_x002C_"
               DTS:MaximumWidth="7"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="COD_ENTITY_GEOGRAPHIC_PARENT"
-              DTS:DTSID="{A46DECE0-4316-490C-AC8D-7D659A2B8C17}"
+              DTS:DTSID="{630FEBB0-B484-4BF5-A129-B5CA567CC4FD}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -237,7 +237,7 @@
               DTS:DataType="5"
               DTS:TextQualified="True"
               DTS:ObjectName="ID_GEO_EXT"
-              DTS:DTSID="{1F463FCA-0715-4240-8A0D-2925A62A5461}"
+              DTS:DTSID="{6DF5E9CB-3F2E-47DC-AB6F-389164224F74}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -253,6 +253,23 @@
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
           DTS:ConnectionString="Data Source=SURUBI037;User ID=;Initial Catalog=MIGRA;Provider=MSOLEDBSQL.1;Persist Security Info=False;Integrated Security=SSPI;Initial File Name=;Server SPN=;Authentication=;Access Token=;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[TCOM.bi_migra]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{0C8DAFAC-3DDD-4D8C-9C5F-43498DF0BCA9}"
+      DTS:ObjectName="TCOM.bi_migra">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=TCOM;User ID=bi_migra;Provider=MSDAORA.1;Persist Security Info=True;integrated security=SSPI;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAWIDKVuRjLkqKifurIYms5AAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAD2DagZm5H9OspwvJDhZRtUAAAAAASAAACgAAAAEAAAAHeb0GWUUP8DNK7Tl86/Ag8gAAAAj0a8B0Uxk/1SrEk0fRoBP+GhSvCUvjrfDSiC6e4GWCIUAAAAIYTBw6lK74T5r+o6P8rQa+ALfis</DTS:Password>
+        </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
@@ -1328,6 +1345,21 @@
         </pipeline>
       </DTS:ObjectData>
     </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\3-GENERA Tabla"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{C146F242-8F9D-4DA0-BC89-025786DBAA3F}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="3-GENERA Tabla"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1" />
+      </DTS:ObjectData>
+    </DTS:Executable>
   </DTS:Executables>
   <DTS:PrecedenceConstraints>
     <DTS:PrecedenceConstraint
@@ -1393,6 +1425,10 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="157,42"
+          Id="Package\3-GENERA Tabla"
+          TopLeft="619,198" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
