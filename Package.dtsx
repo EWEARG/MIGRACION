@@ -1,0 +1,1526 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="10/5/2022 10:40:48 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="HCND1433Z6R"
+  DTS:CreatorName="ENERGIAER\eettlin"
+  DTS:DTSID="{9797A458-606C-4739-995B-40189C341919}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.2000.180"
+  DTS:LocaleID="3082"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="30"
+  DTS:VersionGUID="{5A53CD5F-DDB9-4903-BBE2-1638A0C47CD5}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[MIGRA_Clientes]"
+      DTS:CreationName="FLATFILE"
+      DTS:Description="Exportación Clientes Activos"
+      DTS:DTSID="{8044D1D6-DB89-4EFA-A14C-9070C4E89B74}"
+      DTS:ObjectName="MIGRA_Clientes">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="3082"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="T:\MIGRA\MIG_Clientes.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="9"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="USUARIO"
+              DTS:DTSID="{4E57D37E-7402-48C9-B5E3-9BDEFB77F3EF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="304"
+              DTS:DataScale="7"
+              DTS:TextQualified="True"
+              DTS:ObjectName="F_ACTUAL"
+              DTS:DTSID="{0C2130F7-9028-44EC-BCC4-522823CFC39B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="6"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PROGRAMA"
+              DTS:DTSID="{8F8FD38B-DB9A-4AAE-A1AC-A7AE289A0869}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="304"
+              DTS:DataScale="7"
+              DTS:TextQualified="True"
+              DTS:ObjectName="F_GEN_INF"
+              DTS:DTSID="{A6867503-DC03-4E59-BADD-5D0D529319D0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="11"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ORIGEN"
+              DTS:DTSID="{328D12C8-C96D-4E88-863F-CF4D027C74A6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="131"
+              DTS:DataPrecision="8"
+              DTS:TextQualified="True"
+              DTS:ObjectName="COD_CLI"
+              DTS:DTSID="{ECF3063C-7755-4F4E-B4E1-BC23FD6519F0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="5"
+              DTS:TextQualified="True"
+              DTS:ObjectName="SEC_CTA"
+              DTS:DTSID="{100E0615-92ED-4EF7-90D5-3B61A7AB4668}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="20"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="APE1_CLI"
+              DTS:DTSID="{13F506A4-3067-4544-84DF-377A2562834B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="20"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="APE2_CLI"
+              DTS:DTSID="{EA936D04-B5FA-4647-BC7B-0EF9ED69DD50}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="30"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NOM_CLI"
+              DTS:DTSID="{F6FAFB82-D504-4343-B459-6035E715AC02}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="304"
+              DTS:DataScale="7"
+              DTS:TextQualified="True"
+              DTS:ObjectName="F_BAJA"
+              DTS:DTSID="{3B1DC98E-5021-441B-B3D1-AAC55BCDFADA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="5"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CO_PAIS"
+              DTS:DTSID="{A6CE72EB-92EC-46E0-A76E-28F82C8B38EC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="5"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TIP_DOC"
+              DTS:DTSID="{5172B91C-F6BA-48DD-AA1B-8B4FE85F9F47}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="80"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DESC_TIP_DOC"
+              DTS:DTSID="{34A18658-3C7A-4AE6-BB59-1212669F83BC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="14"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DOC_ID"
+              DTS:DTSID="{CC920C24-9880-4E7E-B36D-415FC6675C7D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="8"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CUALIF"
+              DTS:DTSID="{E4FAC5CE-F10F-4E94-B7D0-EF798D74FEE5}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[MIGRA_Geografia]"
+      DTS:CreationName="FLATFILE"
+      DTS:Description="Dimensión Geografía"
+      DTS:DTSID="{D588B6E4-3DAB-4995-AF6D-19C53AB9E527}"
+      DTS:ObjectName="MIGRA_Geografia">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="3082"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="T:\MIGRA\MIG_Geotrafia.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="7"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="COD_ENTITY_GEOGRAPHIC"
+              DTS:DTSID="{E7570449-6A3C-4309-B0A9-85B0602C7E52}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="2"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ENTITY_TYPE"
+              DTS:DTSID="{7008D51B-768A-46B5-BB10-5A1B6C66C9EF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ENTITY_NAME"
+              DTS:DTSID="{5440C8AA-805E-4EF0-87E8-E318CC6892F0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="7"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="COD_ENTITY_GEOGRAPHIC_PARENT"
+              DTS:DTSID="{A46DECE0-4316-490C-AC8D-7D659A2B8C17}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="5"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ID_GEO_EXT"
+              DTS:DTSID="{1F463FCA-0715-4240-8A0D-2925A62A5461}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[SURUBI037.MIGRA]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{31B6D8F6-14EA-4A14-9169-35F2D0029B30}"
+      DTS:ObjectName="SURUBI037.MIGRA">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=SURUBI037;User ID=;Initial Catalog=MIGRA;Provider=MSOLEDBSQL.1;Persist Security Info=False;Integrated Security=SSPI;Initial File Name=;Server SPN=;Authentication=;Access Token=;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\1-GEOGRAFIA"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{7C90509C-2767-4BA8-8D59-4825D9E7FF84}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="1-GEOGRAFIA"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\1-GEOGRAFIA\Flat File Destination"
+              componentClassID="Microsoft.FlatFileDestination"
+              contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Destination"
+              localeId="3082"
+              name="Flat File Destination"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether the data will overwrite or append to the destination file."
+                  name="Overwrite">true</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the text to write to the destination file before any data is written."
+                  expressionType="Notify"
+                  name="Header">COD_ENTITY_GEOGRAPHIC,ENTITY_TYPE,ENTITY_NAME,COD_ENTITY_GEOGRAPHIC_PARENT,ID_GEO_EXT</property>
+                <property
+                  dataType="System.Boolean"
+                  description="When text qualifier is enabled, specifies whether the text qualifier in the data written to the destination file will be escaped or not."
+                  name="EscapeQualifier">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\1-GEOGRAFIA\Flat File Destination.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[MIGRA_Geografia]"
+                  connectionManagerRefId="Package.ConnectionManagers[MIGRA_Geografia]"
+                  name="FlatFileConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\1-GEOGRAFIA\Flat File Destination.Inputs[Flat File Destination Input]"
+                  hasSideEffects="true"
+                  name="Flat File Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\1-GEOGRAFIA\Flat File Destination.Inputs[Flat File Destination Input].Columns[COD_ENTITY_GEOGRAPHIC]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="7"
+                      cachedName="COD_ENTITY_GEOGRAPHIC"
+                      externalMetadataColumnId="Package\1-GEOGRAFIA\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[COD_ENTITY_GEOGRAPHIC]"
+                      lineageId="Package\1-GEOGRAFIA\OLE DB Source.Outputs[OLE DB Source Output].Columns[COD_ENTITY_GEOGRAPHIC]" />
+                    <inputColumn
+                      refId="Package\1-GEOGRAFIA\Flat File Destination.Inputs[Flat File Destination Input].Columns[ENTITY_TYPE]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="2"
+                      cachedName="ENTITY_TYPE"
+                      externalMetadataColumnId="Package\1-GEOGRAFIA\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ENTITY_TYPE]"
+                      lineageId="Package\1-GEOGRAFIA\OLE DB Source.Outputs[OLE DB Source Output].Columns[ENTITY_TYPE]" />
+                    <inputColumn
+                      refId="Package\1-GEOGRAFIA\Flat File Destination.Inputs[Flat File Destination Input].Columns[ENTITY_NAME]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="ENTITY_NAME"
+                      externalMetadataColumnId="Package\1-GEOGRAFIA\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ENTITY_NAME]"
+                      lineageId="Package\1-GEOGRAFIA\OLE DB Source.Outputs[OLE DB Source Output].Columns[ENTITY_NAME]" />
+                    <inputColumn
+                      refId="Package\1-GEOGRAFIA\Flat File Destination.Inputs[Flat File Destination Input].Columns[COD_ENTITY_GEOGRAPHIC_PARENT]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="7"
+                      cachedName="COD_ENTITY_GEOGRAPHIC_PARENT"
+                      externalMetadataColumnId="Package\1-GEOGRAFIA\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[COD_ENTITY_GEOGRAPHIC_PARENT]"
+                      lineageId="Package\1-GEOGRAFIA\OLE DB Source.Outputs[OLE DB Source Output].Columns[COD_ENTITY_GEOGRAPHIC_PARENT]" />
+                    <inputColumn
+                      refId="Package\1-GEOGRAFIA\Flat File Destination.Inputs[Flat File Destination Input].Columns[ID_GEO_EXT]"
+                      cachedDataType="r8"
+                      cachedName="ID_GEO_EXT"
+                      externalMetadataColumnId="Package\1-GEOGRAFIA\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ID_GEO_EXT]"
+                      lineageId="Package\1-GEOGRAFIA\OLE DB Source.Outputs[OLE DB Source Output].Columns[ID_GEO_EXT]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\1-GEOGRAFIA\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[COD_ENTITY_GEOGRAPHIC]"
+                      codePage="1252"
+                      dataType="str"
+                      length="7"
+                      name="COD_ENTITY_GEOGRAPHIC" />
+                    <externalMetadataColumn
+                      refId="Package\1-GEOGRAFIA\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ENTITY_TYPE]"
+                      codePage="1252"
+                      dataType="str"
+                      length="2"
+                      name="ENTITY_TYPE" />
+                    <externalMetadataColumn
+                      refId="Package\1-GEOGRAFIA\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ENTITY_NAME]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="ENTITY_NAME" />
+                    <externalMetadataColumn
+                      refId="Package\1-GEOGRAFIA\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[COD_ENTITY_GEOGRAPHIC_PARENT]"
+                      codePage="1252"
+                      dataType="str"
+                      length="7"
+                      name="COD_ENTITY_GEOGRAPHIC_PARENT" />
+                    <externalMetadataColumn
+                      refId="Package\1-GEOGRAFIA\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ID_GEO_EXT]"
+                      dataType="r8"
+                      name="ID_GEO_EXT" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+            </component>
+            <component
+              refId="Package\1-GEOGRAFIA\OLE DB Source"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="OLE DB Source"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[DATA_GEO_ENTITY]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\1-GEOGRAFIA\OLE DB Source.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[SURUBI037.MIGRA]"
+                  connectionManagerRefId="Package.ConnectionManagers[SURUBI037.MIGRA]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\1-GEOGRAFIA\OLE DB Source.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\1-GEOGRAFIA\OLE DB Source.Outputs[OLE DB Source Output].Columns[COD_ENTITY_GEOGRAPHIC]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\1-GEOGRAFIA\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[COD_ENTITY_GEOGRAPHIC]"
+                      length="7"
+                      lineageId="Package\1-GEOGRAFIA\OLE DB Source.Outputs[OLE DB Source Output].Columns[COD_ENTITY_GEOGRAPHIC]"
+                      name="COD_ENTITY_GEOGRAPHIC"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\1-GEOGRAFIA\OLE DB Source.Outputs[OLE DB Source Output].Columns[ENTITY_TYPE]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\1-GEOGRAFIA\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ENTITY_TYPE]"
+                      length="2"
+                      lineageId="Package\1-GEOGRAFIA\OLE DB Source.Outputs[OLE DB Source Output].Columns[ENTITY_TYPE]"
+                      name="ENTITY_TYPE"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\1-GEOGRAFIA\OLE DB Source.Outputs[OLE DB Source Output].Columns[ENTITY_NAME]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\1-GEOGRAFIA\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ENTITY_NAME]"
+                      length="50"
+                      lineageId="Package\1-GEOGRAFIA\OLE DB Source.Outputs[OLE DB Source Output].Columns[ENTITY_NAME]"
+                      name="ENTITY_NAME"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\1-GEOGRAFIA\OLE DB Source.Outputs[OLE DB Source Output].Columns[COD_ENTITY_GEOGRAPHIC_PARENT]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\1-GEOGRAFIA\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[COD_ENTITY_GEOGRAPHIC_PARENT]"
+                      length="7"
+                      lineageId="Package\1-GEOGRAFIA\OLE DB Source.Outputs[OLE DB Source Output].Columns[COD_ENTITY_GEOGRAPHIC_PARENT]"
+                      name="COD_ENTITY_GEOGRAPHIC_PARENT"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\1-GEOGRAFIA\OLE DB Source.Outputs[OLE DB Source Output].Columns[ID_GEO_EXT]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\1-GEOGRAFIA\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ID_GEO_EXT]"
+                      lineageId="Package\1-GEOGRAFIA\OLE DB Source.Outputs[OLE DB Source Output].Columns[ID_GEO_EXT]"
+                      name="ID_GEO_EXT"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\1-GEOGRAFIA\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[COD_ENTITY_GEOGRAPHIC]"
+                      codePage="1252"
+                      dataType="str"
+                      length="7"
+                      name="COD_ENTITY_GEOGRAPHIC" />
+                    <externalMetadataColumn
+                      refId="Package\1-GEOGRAFIA\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ENTITY_TYPE]"
+                      codePage="1252"
+                      dataType="str"
+                      length="2"
+                      name="ENTITY_TYPE" />
+                    <externalMetadataColumn
+                      refId="Package\1-GEOGRAFIA\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ENTITY_NAME]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="ENTITY_NAME" />
+                    <externalMetadataColumn
+                      refId="Package\1-GEOGRAFIA\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[COD_ENTITY_GEOGRAPHIC_PARENT]"
+                      codePage="1252"
+                      dataType="str"
+                      length="7"
+                      name="COD_ENTITY_GEOGRAPHIC_PARENT" />
+                    <externalMetadataColumn
+                      refId="Package\1-GEOGRAFIA\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ID_GEO_EXT]"
+                      dataType="r8"
+                      name="ID_GEO_EXT" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\1-GEOGRAFIA\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\1-GEOGRAFIA\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[COD_ENTITY_GEOGRAPHIC]"
+                      codePage="1252"
+                      dataType="str"
+                      length="7"
+                      lineageId="Package\1-GEOGRAFIA\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[COD_ENTITY_GEOGRAPHIC]"
+                      name="COD_ENTITY_GEOGRAPHIC" />
+                    <outputColumn
+                      refId="Package\1-GEOGRAFIA\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ENTITY_TYPE]"
+                      codePage="1252"
+                      dataType="str"
+                      length="2"
+                      lineageId="Package\1-GEOGRAFIA\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ENTITY_TYPE]"
+                      name="ENTITY_TYPE" />
+                    <outputColumn
+                      refId="Package\1-GEOGRAFIA\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ENTITY_NAME]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\1-GEOGRAFIA\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ENTITY_NAME]"
+                      name="ENTITY_NAME" />
+                    <outputColumn
+                      refId="Package\1-GEOGRAFIA\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[COD_ENTITY_GEOGRAPHIC_PARENT]"
+                      codePage="1252"
+                      dataType="str"
+                      length="7"
+                      lineageId="Package\1-GEOGRAFIA\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[COD_ENTITY_GEOGRAPHIC_PARENT]"
+                      name="COD_ENTITY_GEOGRAPHIC_PARENT" />
+                    <outputColumn
+                      refId="Package\1-GEOGRAFIA\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ID_GEO_EXT]"
+                      dataType="r8"
+                      lineageId="Package\1-GEOGRAFIA\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ID_GEO_EXT]"
+                      name="ID_GEO_EXT" />
+                    <outputColumn
+                      refId="Package\1-GEOGRAFIA\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\1-GEOGRAFIA\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\1-GEOGRAFIA\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\1-GEOGRAFIA\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\1-GEOGRAFIA.Paths[OLE DB Source Output]"
+              endId="Package\1-GEOGRAFIA\Flat File Destination.Inputs[Flat File Destination Input]"
+              name="OLE DB Source Output"
+              startId="Package\1-GEOGRAFIA\OLE DB Source.Outputs[OLE DB Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\2-CLIENTES"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{056CED14-0D2F-457E-A914-57D76924BF7F}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="2-CLIENTES"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\2-CLIENTES\Flat File Destination"
+              componentClassID="Microsoft.FlatFileDestination"
+              contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Destination"
+              localeId="3082"
+              name="Flat File Destination"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether the data will overwrite or append to the destination file."
+                  name="Overwrite">true</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the text to write to the destination file before any data is written."
+                  expressionType="Notify"
+                  name="Header">USUARIO,F_ACTUAL,PROGRAMA,F_GEN_INF,ORIGEN,COD_CLI,SEC_CTA,APE1_CLI,APE2_CLI,NOM_CLI,F_BAJA,CO_PAIS,TIP_DOC,DESC_TIP_DOC,DOC_ID,CUALIF</property>
+                <property
+                  dataType="System.Boolean"
+                  description="When text qualifier is enabled, specifies whether the text qualifier in the data written to the destination file will be escaped or not."
+                  name="EscapeQualifier">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\2-CLIENTES\Flat File Destination.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[MIGRA_Clientes]"
+                  connectionManagerRefId="Package.ConnectionManagers[MIGRA_Clientes]"
+                  name="FlatFileConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\2-CLIENTES\Flat File Destination.Inputs[Flat File Destination Input]"
+                  hasSideEffects="true"
+                  name="Flat File Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\2-CLIENTES\Flat File Destination.Inputs[Flat File Destination Input].Columns[USUARIO]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="9"
+                      cachedName="USUARIO"
+                      externalMetadataColumnId="Package\2-CLIENTES\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[USUARIO]"
+                      lineageId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Output].Columns[USUARIO]" />
+                    <inputColumn
+                      refId="Package\2-CLIENTES\Flat File Destination.Inputs[Flat File Destination Input].Columns[F_ACTUAL]"
+                      cachedDataType="dbTimeStamp2"
+                      cachedName="F_ACTUAL"
+                      cachedScale="7"
+                      externalMetadataColumnId="Package\2-CLIENTES\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[F_ACTUAL]"
+                      lineageId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Output].Columns[F_ACTUAL]" />
+                    <inputColumn
+                      refId="Package\2-CLIENTES\Flat File Destination.Inputs[Flat File Destination Input].Columns[PROGRAMA]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="6"
+                      cachedName="PROGRAMA"
+                      externalMetadataColumnId="Package\2-CLIENTES\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[PROGRAMA]"
+                      lineageId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Output].Columns[PROGRAMA]" />
+                    <inputColumn
+                      refId="Package\2-CLIENTES\Flat File Destination.Inputs[Flat File Destination Input].Columns[F_GEN_INF]"
+                      cachedDataType="dbTimeStamp2"
+                      cachedName="F_GEN_INF"
+                      cachedScale="7"
+                      externalMetadataColumnId="Package\2-CLIENTES\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[F_GEN_INF]"
+                      lineageId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Output].Columns[F_GEN_INF]" />
+                    <inputColumn
+                      refId="Package\2-CLIENTES\Flat File Destination.Inputs[Flat File Destination Input].Columns[ORIGEN]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="11"
+                      cachedName="ORIGEN"
+                      externalMetadataColumnId="Package\2-CLIENTES\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ORIGEN]"
+                      lineageId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Output].Columns[ORIGEN]" />
+                    <inputColumn
+                      refId="Package\2-CLIENTES\Flat File Destination.Inputs[Flat File Destination Input].Columns[COD_CLI]"
+                      cachedDataType="numeric"
+                      cachedName="COD_CLI"
+                      cachedPrecision="8"
+                      externalMetadataColumnId="Package\2-CLIENTES\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[COD_CLI]"
+                      lineageId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Output].Columns[COD_CLI]" />
+                    <inputColumn
+                      refId="Package\2-CLIENTES\Flat File Destination.Inputs[Flat File Destination Input].Columns[SEC_CTA]"
+                      cachedDataType="r8"
+                      cachedName="SEC_CTA"
+                      externalMetadataColumnId="Package\2-CLIENTES\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[SEC_CTA]"
+                      lineageId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Output].Columns[SEC_CTA]" />
+                    <inputColumn
+                      refId="Package\2-CLIENTES\Flat File Destination.Inputs[Flat File Destination Input].Columns[APE1_CLI]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="20"
+                      cachedName="APE1_CLI"
+                      externalMetadataColumnId="Package\2-CLIENTES\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[APE1_CLI]"
+                      lineageId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Output].Columns[APE1_CLI]" />
+                    <inputColumn
+                      refId="Package\2-CLIENTES\Flat File Destination.Inputs[Flat File Destination Input].Columns[APE2_CLI]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="20"
+                      cachedName="APE2_CLI"
+                      externalMetadataColumnId="Package\2-CLIENTES\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[APE2_CLI]"
+                      lineageId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Output].Columns[APE2_CLI]" />
+                    <inputColumn
+                      refId="Package\2-CLIENTES\Flat File Destination.Inputs[Flat File Destination Input].Columns[NOM_CLI]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="30"
+                      cachedName="NOM_CLI"
+                      externalMetadataColumnId="Package\2-CLIENTES\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[NOM_CLI]"
+                      lineageId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Output].Columns[NOM_CLI]" />
+                    <inputColumn
+                      refId="Package\2-CLIENTES\Flat File Destination.Inputs[Flat File Destination Input].Columns[F_BAJA]"
+                      cachedDataType="dbTimeStamp2"
+                      cachedName="F_BAJA"
+                      cachedScale="7"
+                      externalMetadataColumnId="Package\2-CLIENTES\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[F_BAJA]"
+                      lineageId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Output].Columns[F_BAJA]" />
+                    <inputColumn
+                      refId="Package\2-CLIENTES\Flat File Destination.Inputs[Flat File Destination Input].Columns[CO_PAIS]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="5"
+                      cachedName="CO_PAIS"
+                      externalMetadataColumnId="Package\2-CLIENTES\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[CO_PAIS]"
+                      lineageId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Output].Columns[CO_PAIS]" />
+                    <inputColumn
+                      refId="Package\2-CLIENTES\Flat File Destination.Inputs[Flat File Destination Input].Columns[TIP_DOC]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="5"
+                      cachedName="TIP_DOC"
+                      externalMetadataColumnId="Package\2-CLIENTES\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[TIP_DOC]"
+                      lineageId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Output].Columns[TIP_DOC]" />
+                    <inputColumn
+                      refId="Package\2-CLIENTES\Flat File Destination.Inputs[Flat File Destination Input].Columns[DESC_TIP_DOC]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="80"
+                      cachedName="DESC_TIP_DOC"
+                      externalMetadataColumnId="Package\2-CLIENTES\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[DESC_TIP_DOC]"
+                      lineageId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Output].Columns[DESC_TIP_DOC]" />
+                    <inputColumn
+                      refId="Package\2-CLIENTES\Flat File Destination.Inputs[Flat File Destination Input].Columns[DOC_ID]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="14"
+                      cachedName="DOC_ID"
+                      externalMetadataColumnId="Package\2-CLIENTES\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[DOC_ID]"
+                      lineageId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Output].Columns[DOC_ID]" />
+                    <inputColumn
+                      refId="Package\2-CLIENTES\Flat File Destination.Inputs[Flat File Destination Input].Columns[CUALIF]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="8"
+                      cachedName="CUALIF"
+                      externalMetadataColumnId="Package\2-CLIENTES\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[CUALIF]"
+                      lineageId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Output].Columns[CUALIF]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\2-CLIENTES\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[USUARIO]"
+                      codePage="1252"
+                      dataType="str"
+                      length="9"
+                      name="USUARIO" />
+                    <externalMetadataColumn
+                      refId="Package\2-CLIENTES\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[F_ACTUAL]"
+                      dataType="dbTimeStamp2"
+                      name="F_ACTUAL"
+                      scale="7" />
+                    <externalMetadataColumn
+                      refId="Package\2-CLIENTES\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[PROGRAMA]"
+                      codePage="1252"
+                      dataType="str"
+                      length="6"
+                      name="PROGRAMA" />
+                    <externalMetadataColumn
+                      refId="Package\2-CLIENTES\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[F_GEN_INF]"
+                      dataType="dbTimeStamp2"
+                      name="F_GEN_INF"
+                      scale="7" />
+                    <externalMetadataColumn
+                      refId="Package\2-CLIENTES\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ORIGEN]"
+                      codePage="1252"
+                      dataType="str"
+                      length="11"
+                      name="ORIGEN" />
+                    <externalMetadataColumn
+                      refId="Package\2-CLIENTES\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[COD_CLI]"
+                      dataType="numeric"
+                      name="COD_CLI"
+                      precision="8" />
+                    <externalMetadataColumn
+                      refId="Package\2-CLIENTES\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[SEC_CTA]"
+                      dataType="r8"
+                      name="SEC_CTA" />
+                    <externalMetadataColumn
+                      refId="Package\2-CLIENTES\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[APE1_CLI]"
+                      codePage="1252"
+                      dataType="str"
+                      length="20"
+                      name="APE1_CLI" />
+                    <externalMetadataColumn
+                      refId="Package\2-CLIENTES\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[APE2_CLI]"
+                      codePage="1252"
+                      dataType="str"
+                      length="20"
+                      name="APE2_CLI" />
+                    <externalMetadataColumn
+                      refId="Package\2-CLIENTES\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[NOM_CLI]"
+                      codePage="1252"
+                      dataType="str"
+                      length="30"
+                      name="NOM_CLI" />
+                    <externalMetadataColumn
+                      refId="Package\2-CLIENTES\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[F_BAJA]"
+                      dataType="dbTimeStamp2"
+                      name="F_BAJA"
+                      scale="7" />
+                    <externalMetadataColumn
+                      refId="Package\2-CLIENTES\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[CO_PAIS]"
+                      codePage="1252"
+                      dataType="str"
+                      length="5"
+                      name="CO_PAIS" />
+                    <externalMetadataColumn
+                      refId="Package\2-CLIENTES\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[TIP_DOC]"
+                      codePage="1252"
+                      dataType="str"
+                      length="5"
+                      name="TIP_DOC" />
+                    <externalMetadataColumn
+                      refId="Package\2-CLIENTES\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[DESC_TIP_DOC]"
+                      codePage="1252"
+                      dataType="str"
+                      length="80"
+                      name="DESC_TIP_DOC" />
+                    <externalMetadataColumn
+                      refId="Package\2-CLIENTES\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[DOC_ID]"
+                      codePage="1252"
+                      dataType="str"
+                      length="14"
+                      name="DOC_ID" />
+                    <externalMetadataColumn
+                      refId="Package\2-CLIENTES\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[CUALIF]"
+                      codePage="1252"
+                      dataType="str"
+                      length="8"
+                      name="CUALIF" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+            </component>
+            <component
+              refId="Package\2-CLIENTES\OLE DB Source"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="OLE DB Source"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[CLIENTES_A_MIGRAR]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\2-CLIENTES\OLE DB Source.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[SURUBI037.MIGRA]"
+                  connectionManagerRefId="Package.ConnectionManagers[SURUBI037.MIGRA]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Output].Columns[USUARIO]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[USUARIO]"
+                      length="9"
+                      lineageId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Output].Columns[USUARIO]"
+                      name="USUARIO"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Output].Columns[F_ACTUAL]"
+                      dataType="dbTimeStamp2"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[F_ACTUAL]"
+                      lineageId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Output].Columns[F_ACTUAL]"
+                      name="F_ACTUAL"
+                      scale="7"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Output].Columns[PROGRAMA]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[PROGRAMA]"
+                      length="6"
+                      lineageId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Output].Columns[PROGRAMA]"
+                      name="PROGRAMA"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Output].Columns[F_GEN_INF]"
+                      dataType="dbTimeStamp2"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[F_GEN_INF]"
+                      lineageId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Output].Columns[F_GEN_INF]"
+                      name="F_GEN_INF"
+                      scale="7"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Output].Columns[ORIGEN]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ORIGEN]"
+                      length="11"
+                      lineageId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Output].Columns[ORIGEN]"
+                      name="ORIGEN"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Output].Columns[COD_CLI]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[COD_CLI]"
+                      lineageId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Output].Columns[COD_CLI]"
+                      name="COD_CLI"
+                      precision="8"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Output].Columns[SEC_CTA]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[SEC_CTA]"
+                      lineageId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Output].Columns[SEC_CTA]"
+                      name="SEC_CTA"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Output].Columns[APE1_CLI]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[APE1_CLI]"
+                      length="20"
+                      lineageId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Output].Columns[APE1_CLI]"
+                      name="APE1_CLI"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Output].Columns[APE2_CLI]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[APE2_CLI]"
+                      length="20"
+                      lineageId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Output].Columns[APE2_CLI]"
+                      name="APE2_CLI"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Output].Columns[NOM_CLI]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[NOM_CLI]"
+                      length="30"
+                      lineageId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Output].Columns[NOM_CLI]"
+                      name="NOM_CLI"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Output].Columns[F_BAJA]"
+                      dataType="dbTimeStamp2"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[F_BAJA]"
+                      lineageId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Output].Columns[F_BAJA]"
+                      name="F_BAJA"
+                      scale="7"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Output].Columns[CO_PAIS]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[CO_PAIS]"
+                      length="5"
+                      lineageId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Output].Columns[CO_PAIS]"
+                      name="CO_PAIS"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Output].Columns[TIP_DOC]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[TIP_DOC]"
+                      length="5"
+                      lineageId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Output].Columns[TIP_DOC]"
+                      name="TIP_DOC"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Output].Columns[DESC_TIP_DOC]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[DESC_TIP_DOC]"
+                      length="80"
+                      lineageId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Output].Columns[DESC_TIP_DOC]"
+                      name="DESC_TIP_DOC"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Output].Columns[DOC_ID]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[DOC_ID]"
+                      length="14"
+                      lineageId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Output].Columns[DOC_ID]"
+                      name="DOC_ID"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Output].Columns[CUALIF]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[CUALIF]"
+                      length="8"
+                      lineageId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Output].Columns[CUALIF]"
+                      name="CUALIF"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[USUARIO]"
+                      codePage="1252"
+                      dataType="str"
+                      length="9"
+                      name="USUARIO" />
+                    <externalMetadataColumn
+                      refId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[F_ACTUAL]"
+                      dataType="dbTimeStamp2"
+                      name="F_ACTUAL"
+                      scale="7" />
+                    <externalMetadataColumn
+                      refId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[PROGRAMA]"
+                      codePage="1252"
+                      dataType="str"
+                      length="6"
+                      name="PROGRAMA" />
+                    <externalMetadataColumn
+                      refId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[F_GEN_INF]"
+                      dataType="dbTimeStamp2"
+                      name="F_GEN_INF"
+                      scale="7" />
+                    <externalMetadataColumn
+                      refId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ORIGEN]"
+                      codePage="1252"
+                      dataType="str"
+                      length="11"
+                      name="ORIGEN" />
+                    <externalMetadataColumn
+                      refId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[COD_CLI]"
+                      dataType="numeric"
+                      name="COD_CLI"
+                      precision="8" />
+                    <externalMetadataColumn
+                      refId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[SEC_CTA]"
+                      dataType="r8"
+                      name="SEC_CTA" />
+                    <externalMetadataColumn
+                      refId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[APE1_CLI]"
+                      codePage="1252"
+                      dataType="str"
+                      length="20"
+                      name="APE1_CLI" />
+                    <externalMetadataColumn
+                      refId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[APE2_CLI]"
+                      codePage="1252"
+                      dataType="str"
+                      length="20"
+                      name="APE2_CLI" />
+                    <externalMetadataColumn
+                      refId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[NOM_CLI]"
+                      codePage="1252"
+                      dataType="str"
+                      length="30"
+                      name="NOM_CLI" />
+                    <externalMetadataColumn
+                      refId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[F_BAJA]"
+                      dataType="dbTimeStamp2"
+                      name="F_BAJA"
+                      scale="7" />
+                    <externalMetadataColumn
+                      refId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[CO_PAIS]"
+                      codePage="1252"
+                      dataType="str"
+                      length="5"
+                      name="CO_PAIS" />
+                    <externalMetadataColumn
+                      refId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[TIP_DOC]"
+                      codePage="1252"
+                      dataType="str"
+                      length="5"
+                      name="TIP_DOC" />
+                    <externalMetadataColumn
+                      refId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[DESC_TIP_DOC]"
+                      codePage="1252"
+                      dataType="str"
+                      length="80"
+                      name="DESC_TIP_DOC" />
+                    <externalMetadataColumn
+                      refId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[DOC_ID]"
+                      codePage="1252"
+                      dataType="str"
+                      length="14"
+                      name="DOC_ID" />
+                    <externalMetadataColumn
+                      refId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[CUALIF]"
+                      codePage="1252"
+                      dataType="str"
+                      length="8"
+                      name="CUALIF" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[USUARIO]"
+                      codePage="1252"
+                      dataType="str"
+                      length="9"
+                      lineageId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[USUARIO]"
+                      name="USUARIO" />
+                    <outputColumn
+                      refId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[F_ACTUAL]"
+                      dataType="dbTimeStamp2"
+                      lineageId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[F_ACTUAL]"
+                      name="F_ACTUAL"
+                      scale="7" />
+                    <outputColumn
+                      refId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[PROGRAMA]"
+                      codePage="1252"
+                      dataType="str"
+                      length="6"
+                      lineageId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[PROGRAMA]"
+                      name="PROGRAMA" />
+                    <outputColumn
+                      refId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[F_GEN_INF]"
+                      dataType="dbTimeStamp2"
+                      lineageId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[F_GEN_INF]"
+                      name="F_GEN_INF"
+                      scale="7" />
+                    <outputColumn
+                      refId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ORIGEN]"
+                      codePage="1252"
+                      dataType="str"
+                      length="11"
+                      lineageId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ORIGEN]"
+                      name="ORIGEN" />
+                    <outputColumn
+                      refId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[COD_CLI]"
+                      dataType="numeric"
+                      lineageId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[COD_CLI]"
+                      name="COD_CLI"
+                      precision="8" />
+                    <outputColumn
+                      refId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[SEC_CTA]"
+                      dataType="r8"
+                      lineageId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[SEC_CTA]"
+                      name="SEC_CTA" />
+                    <outputColumn
+                      refId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[APE1_CLI]"
+                      codePage="1252"
+                      dataType="str"
+                      length="20"
+                      lineageId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[APE1_CLI]"
+                      name="APE1_CLI" />
+                    <outputColumn
+                      refId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[APE2_CLI]"
+                      codePage="1252"
+                      dataType="str"
+                      length="20"
+                      lineageId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[APE2_CLI]"
+                      name="APE2_CLI" />
+                    <outputColumn
+                      refId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[NOM_CLI]"
+                      codePage="1252"
+                      dataType="str"
+                      length="30"
+                      lineageId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[NOM_CLI]"
+                      name="NOM_CLI" />
+                    <outputColumn
+                      refId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[F_BAJA]"
+                      dataType="dbTimeStamp2"
+                      lineageId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[F_BAJA]"
+                      name="F_BAJA"
+                      scale="7" />
+                    <outputColumn
+                      refId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[CO_PAIS]"
+                      codePage="1252"
+                      dataType="str"
+                      length="5"
+                      lineageId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[CO_PAIS]"
+                      name="CO_PAIS" />
+                    <outputColumn
+                      refId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[TIP_DOC]"
+                      codePage="1252"
+                      dataType="str"
+                      length="5"
+                      lineageId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[TIP_DOC]"
+                      name="TIP_DOC" />
+                    <outputColumn
+                      refId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[DESC_TIP_DOC]"
+                      codePage="1252"
+                      dataType="str"
+                      length="80"
+                      lineageId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[DESC_TIP_DOC]"
+                      name="DESC_TIP_DOC" />
+                    <outputColumn
+                      refId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[DOC_ID]"
+                      codePage="1252"
+                      dataType="str"
+                      length="14"
+                      lineageId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[DOC_ID]"
+                      name="DOC_ID" />
+                    <outputColumn
+                      refId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[CUALIF]"
+                      codePage="1252"
+                      dataType="str"
+                      length="8"
+                      lineageId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[CUALIF]"
+                      name="CUALIF" />
+                    <outputColumn
+                      refId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\2-CLIENTES.Paths[OLE DB Source Output]"
+              endId="Package\2-CLIENTES\Flat File Destination.Inputs[Flat File Destination Input]"
+              name="OLE DB Source Output"
+              startId="Package\2-CLIENTES\OLE DB Source.Outputs[OLE DB Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción]"
+      DTS:CreationName=""
+      DTS:DTSID="{5F6F182A-006B-45E3-8C2C-F8AF62B45444}"
+      DTS:From="Package\1-GEOGRAFIA"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción"
+      DTS:To="Package\2-CLIENTES" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--Esta sección CDATA contiene la información de diseño del paquete. Esta sección incluye información como, por ejemplo, las coordenadas (x,y), el ancho y el alto.-->
+<!--Si edita manualmente esta sección y comete un error, puede eliminarlo. -->
+<!--El paquete podrá cargarse normalmente, pero se perderá la información de diseño anterior y el diseñador reorganizará los elementos automáticamente en la superficie de diseño.-->
+<Objects
+  Version="8">
+  <!--Cada uno de los nodos siguientes contiene propiedades que no afectan al comportamiento en tiempo de ejecución.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="145,42"
+          Id="Package\1-GEOGRAFIA"
+          TopLeft="100.5,92.5" />
+        <NodeLayout
+          Size="136,42"
+          Id="Package\2-CLIENTES"
+          TopLeft="224,317" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción]"
+          TopLeft="173,134.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="119,182.5"
+              Start="0,0"
+              End="119,175">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,87.25" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,87.25"
+                    Point2="0,91.25"
+                    Point3="4,91.25" />
+                  <mssgle:LineSegment
+                    End="115,91.25" />
+                  <mssgle:CubicBezierSegment
+                    Point1="115,91.25"
+                    Point2="119,91.25"
+                    Point3="119,95.25" />
+                  <mssgle:LineSegment
+                    End="119,175" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\1-GEOGRAFIA">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="150,42"
+          Id="Package\1-GEOGRAFIA\OLE DB Source"
+          TopLeft="120.5,112.5" />
+        <NodeLayout
+          Size="172,42"
+          Id="Package\1-GEOGRAFIA\Flat File Destination"
+          TopLeft="434,243" />
+        <EdgeLayout
+          Id="Package\1-GEOGRAFIA.Paths[OLE DB Source Output]"
+          TopLeft="195.5,154.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="324.5,88.5"
+              Start="0,0"
+              End="324.5,81">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,40.25" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,40.25"
+                    Point2="0,44.25"
+                    Point3="4,44.25" />
+                  <mssgle:LineSegment
+                    End="320.5,44.25" />
+                  <mssgle:CubicBezierSegment
+                    Point1="320.5,44.25"
+                    Point2="324.5,44.25"
+                    Point3="324.5,48.25" />
+                  <mssgle:LineSegment
+                    End="324.5,81" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\1-GEOGRAFIA\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">View</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\2-CLIENTES">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="150,42"
+          Id="Package\2-CLIENTES\OLE DB Source"
+          TopLeft="98.5,73.5" />
+        <NodeLayout
+          Size="172,42"
+          Id="Package\2-CLIENTES\Flat File Destination"
+          TopLeft="422,247" />
+        <EdgeLayout
+          Id="Package\2-CLIENTES.Paths[OLE DB Source Output]"
+          TopLeft="173.5,115.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="334.5,131.5"
+              Start="0,0"
+              End="334.5,124">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,61.75" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,61.75"
+                    Point2="0,65.75"
+                    Point3="4,65.75" />
+                  <mssgle:LineSegment
+                    End="330.5,65.75" />
+                  <mssgle:CubicBezierSegment
+                    Point1="330.5,65.75"
+                    Point2="334.5,65.75"
+                    Point3="334.5,69.75" />
+                  <mssgle:LineSegment
+                    End="334.5,124" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\2-CLIENTES\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">View</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
